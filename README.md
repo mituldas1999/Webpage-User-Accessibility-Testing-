@@ -10,7 +10,7 @@
   - Empty link: 13 ❌
   - Broken ARIA reference: 7 ❌
 - **Contrast Errors:** 12 ❌
-  - Very low contrast: 12 ❌
+  - Shallow contrast: 12 ❌
 
 ## Detailed Findings
 
@@ -23,7 +23,7 @@
    Each image must have an alt attribute. Without alternative text, the content of an image will not be available to screen reader users or when the image is unavailable.
 
 3. **What To Do:**
-   Add an alt attribute to the image. The attribute value should accurately and succinctly present the content and function of the image. If the content of the image is conveyed in the context or surroundings of the image, or if the image does not convey content or have a function, it should be given empty/null alternative text (alt="").
+   Add an alt attribute to the image. The attribute value should accurately and succinctly present the content and function of the image. If the image's content is conveyed in the context or surroundings of the image, or if the image does not convey content or have a function, it should be given empty/null alternative text (alt="").
 
 4. **The Algorithm... in English:**
    An image does not have an alt attribute.
@@ -34,13 +34,13 @@
    A button is empty or has no value text.
    
 2. **Why It Matters:**
-   When navigating to a button, descriptive text must be presented to screen reader users to indicate the function of the button.
+   When navigating to a button, descriptive text must be presented to screen reader users to indicate the button's function.
 
 3. **What To Do:**
    Place text content within the `<button>` element or give the `<input>` element a value attribute.
 
 4. **The Algorithm... in English:**
-   A `<button>` element is present that contains no text content (or alternative text), or an `<input type="submit">`, `<input type="button">`, or `<input type="reset">` has an empty or missing value attribute.
+   A `<button>` element is present that contains no text content (or alternative text), or an `<input type="submit">,` `<input type="button">,` or `<input type="reset">` has an empty or missing value attribute.
 
 ### Empty link - X13
 
